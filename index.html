@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,600,1000" rel="stylesheet" type="text/css">
+    	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    	<link type="text/css" rel="stylesheet" href="css/style.css">
+		<meta name="author" content="Joey Harig"></meta>
+		<title>Pig Game</title>
+
+	</head>
+
+	<body id = "body">
+
+		<div id="intro" class="intro-wrapper clearfix">
+			<h1 class="intro header">pig | the game</h1>
+			<div class="intro"><p>Pig is a dice game, played in turns. You roll the pair of dice as many times as you
+				would like during your turn. Each roll is added to your Current Score. </p>
+				<br><p>If you roll a 1 on either die, your Current Score will set back to 0 and your turn will be over. </p>
+				<br><p>You may choose to Hold and by doing so, add your Current Score to your Total Score and pass the turn. </p>
+				<br><p>A player wins when their Total score reaches 100.</p></div>
+				<button class="btn-1-player btn"><i class="ion-ios-play-outline"></i>1 Player</button>
+				<button class="btn-2-player btn"><i class="ion-ios-play-outline"></i>2 Players</button>
+		</div>
+
+
+		<div id="game" class="wrapper clearfix">
+			<div class="player-0-panel active">
+
+								<div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div id="box-0" class="player-current-box-0">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+
+            </div>
+
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div id="box-1" class="player-current-box-1">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+            <button class="btn-new btn"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll btn"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold btn"><i class="ion-ios-download-outline"></i>Hold</button>
+
+			<img src="img/dice-5.png" alt="Dice" class="dice" id="dice1">
+
+			<img src="img/dice-5.png" alt="Dice" class="dice" id="dice2">
+
+		</div>
+
+		<script src="js/app.js"></script>
+
+	</body>
+</html>
